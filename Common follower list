@@ -1,0 +1,20 @@
+// Write your code below
+var bobsFollowers=['ram','sham','pam','shesh'];
+var tinasFollowers=['pooja','ram','sham'];
+
+var mutualFollowers=[];
+for(let i=0;i<bobsFollowers.length;i++)
+{
+      for(let j=0;j<tinasFollowers.length;j++)
+      {
+              if(bobsFollowers[i] === tinasFollowers[j])
+              {
+                      mutualFollowers.push( tinasFollowers[j]);   
+              }
+      }
+}
+
+for(let k=0;k<mutualFollowers.length;k++)
+{
+          console.log(mutualFollowers[k]);
+}
